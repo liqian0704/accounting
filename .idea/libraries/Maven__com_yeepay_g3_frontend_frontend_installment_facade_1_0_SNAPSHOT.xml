@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.yeepay.g3.frontend:frontend-installment-facade:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yeepay/g3/frontend/frontend-installment-facade/1.0-SNAPSHOT/frontend-installment-facade-1.0-20180411.083200-87.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yeepay/g3/frontend/frontend-installment-facade/1.0-SNAPSHOT/frontend-installment-facade-1.0-20180411.083200-87-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/yeepay/g3/frontend/frontend-installment-facade/1.0-SNAPSHOT/frontend-installment-facade-1.0-20180411.083200-87-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

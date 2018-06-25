@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="repository.SmsCodeDao">
+
+    <resultMap id="toolsSMSCode" type="entity.tool.ToolsSMSCode">
+        <id property="id" column="ID"/>
+        <result property="parentMerchantNo" column="PARENT_MERCHANT_NO" />
+        <result property="template" column="TEMPLATE"/>
+        <result property="businessType" column="BUSINESS_TYPE"/>
+        <result property="phoneNumber" column="BUSINESS_NUMBER" />
+        <result property="code" column="CODE"/>
+        <result property="invalidTime" column="INVALID_TIME"/>
+        <result property="status" column="STATUS" jdbcType="TINYINT" javaType="entity.tool.SMSCodeStatusEnum" typeHandler="typehandler.StatusTypeHandler"/>
+        <result property="createDate" column="CREATE_DATE"/>
+        <result property="updateDate" column="UPDATE_DATE"/>
+        <result property="source" column="SOURCE"/>
+
+    </resultMap>
+
+
+    <select id="toolSMSCode" resultMap="toolsSMSCode">
+        select * from mt_tools.tbl_tools_sms_code ORDER by create_date limit 1
+    </select>
+
+    <!--<select id="symCodeByPhone" resultMap="smsCodeEntity">-->
+    <!--SELECT * FROM YMF.TBL_SMS_CODE WHERE PHONE_NO = #{phoneNo,typeHandler=SensitiveL2StringHandler } order by id desc-->
+    <!--</select>-->
+</mapper>

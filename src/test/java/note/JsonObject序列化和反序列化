@@ -1,0 +1,19 @@
+1.将java对象转换为json字符串（序列化）
+
+先将java对象转换为json对象，在将json对象转换为json字符串
+JSONObject json = JSONObject.fromObject(obj);//将java对象转换为json对象
+String str = json.toString();//将json对象转换为字符串
+
+
+2.将json字符串转换为java对象（反序列化）
+
+同样先将json字符串转换为json对象，再将json对象转换为java对象，如下所示。
+JSONObject obj = new JSONObject().fromObject(jsonStr);  //将json字符串转换为json对象，jsonStr为一个json字符串
+将json对象转换为java对象（Person为实例类）
+Person jb = (Person)JSONObject.toBean(obj,Person.class);//将建json对象转换为Person对象
+
+注：反序列化时可能会遇到以下问题
+    JSONObject object = JSONObject.fromObject(user);
+    Object dep = object.get("department");  //get可获取某个节点的值
+    object.remove("department")   //remove可以移除某个节点
+    object.element("test","test")  //element可添加任意一个节点

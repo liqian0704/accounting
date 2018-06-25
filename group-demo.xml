@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" parallel="classes">
+    <parameter name="p1" value="1111"/>
+    <test name="GroupDemo">
+
+        <groups>
+
+            <run>
+                <include name="group1"/>
+                <exclude name="group2"></exclude>
+
+            </run>
+
+        </groups>
+
+        <classes >
+            <class name="GroupDemo"></class>
+            <class name="CssSelectorDemo"></class>
+        </classes>
+    </test>
+
+
+
+</suite>

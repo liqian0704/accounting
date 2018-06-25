@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.miitang.merchant:mt-merchant-facade:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/miitang/merchant/mt-merchant-facade/1.0-SNAPSHOT/mt-merchant-facade-1.0-20180620.082719-488.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/miitang/merchant/mt-merchant-facade/1.0-SNAPSHOT/mt-merchant-facade-1.0-20180620.082719-488-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/miitang/merchant/mt-merchant-facade/1.0-SNAPSHOT/mt-merchant-facade-1.0-20180620.082719-488-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

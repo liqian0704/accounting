@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" parallel="classes">
+    <parameter name="p1" value="1111"/>
+    <parameter name="p2" value="2222"/>
+
+    <test name="Test1">
+
+        <parameter name="URL" value="http://testng.org/" />
+
+
+
+        <classes>
+
+            <class name="LocateDemo">
+                <methods>
+                   <!-- <include name="test" />-->
+
+                    <include name="para1"></include>
+
+
+                </methods>
+            </class>
+
+
+        </classes>
+
+
+    </test>
+
+
+</suite>
